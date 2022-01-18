@@ -101,3 +101,49 @@ node                             14.17.5   256d6360f157   5 months ago        94
  1412  git add .
  1413  git commit -m "nova imagem com versionamento correto"
  1414  git push origin main
+
+ https://hub.docker.com/repository/docker/orbite82/conversao-temperatura
+
+ 1416  git add .
+ 1417  git commit -m "add history"
+ 1418  git push origin main
+ 1419  docker image ls
+ 1420  docker push orbite82/conversao-temperatura:v1 
+
+docker tag orbite82/conversao-temperatura:v1 orbite82/conversao-temperatura:latest
+docker image ls
+
+REPOSITORY                       TAG       IMAGE ID       CREATED             SIZE
+orbite82/conversao-temperatura   latest    4aa93d33826f   13 minutes ago      995MB
+orbite82/conversao-temperatura   v1        4aa93d33826f   13 minutes ago      995MB
+conversao-temperatura            latest    a7b7d5c2f1cf   About an hour ago   1.05GB
+<none>                           <none>    520caca1ad60   2 hours ago         993MB
+node                             latest    14777a723ec4   6 days ago          993MB
+hello-world                      latest    feb5d9fea6a5   3 months ago        13.3kB
+node                             14.17.5   256d6360f157   5 months ago        944MB
+
+docker push orbite82/conversao-temperatura:latest
+
+docker image rm orbite82/conversao-temperatura:v1
+docker image rm conversao-temperatura:latest
+docker image ls
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+<none>        <none>    520caca1ad60   2 hours ago    993MB
+node          latest    14777a723ec4   6 days ago     993MB
+hello-world   latest    feb5d9fea6a5   3 months ago   13.3kB
+node          14.17.5   256d6360f157   5 months ago   944MB
+
+docker image prune
+
+docker image ls
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+node          latest    14777a723ec4   6 days ago     993MB
+hello-world   latest    feb5d9fea6a5   3 months ago   13.3kB
+node          14.17.5   256d6360f157   5 months ago   944MB
+
+docker container run -d -p 8080:8080 orbite82/conversao-temperatura:v1
+Unable to find image 'orbite82/conversao-temperatura:v1' locally
+
+docker container ls
+CONTAINER ID   IMAGE                               COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+63fa55ad605e   orbite82/conversao-temperatura:v1   "docker-entrypoint.s…"   15 seconds ago   Up 14 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   relaxed_ritchie
