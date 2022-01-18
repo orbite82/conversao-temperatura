@@ -1,0 +1,103 @@
+
+ 1399  docker image build -t conversao-temperatura .
+ 1400  docker ps
+ 1401  docker ps -a
+ 1402  docker rm a6bacb522653
+ 1403  docker ps -a
+ 1404  docker ls
+ 1405  docker image ls
+ 1406  docker image build -t conversao-temperatura .
+ 1407  docker image ls
+ 1408  docker container run -d -p 8080:8080 node
+ 1409  docker container ls
+ 1410  docker image ls
+ 1411  docker container ls
+ 1412  docker container ls -a
+ 1413  docker image build -t conversao-temperatura .
+ 1414  docker image ls
+ 1415  docker rm -f 520caca1ad60
+ 1416  docker rm  520caca1ad60
+ 1417  docker prune
+ 1418  docker prune image
+ 1419  docker prune -f image
+ 1420  docker prune -f
+ 1421  docker image ls
+ 1422  docker prune 7f3a45f6d6c5
+ 1423  docker container prune 7f3a45f6d6c5
+ 1424  docker container prune -f
+ 1425  docker image ls
+ 1426  docker rm -f 7f3a45f6d6c5
+ 1427  docker stop 7f3a45f6d6c5
+ 1428  docker stop -f 7f3a45f6d6c5
+ 1429  docker container ls -a
+ 1430  docker container run -d -p 8080:8080 node
+ 1431  docker ps
+ 1432  docker ps -a
+ 1433  docker rm -f 9b399baa48ff
+ 1434  docker container run -d -p 8080:8080 node
+ 1435  docker ps -a
+ 1436  docker container run -d -p 8080 node
+ 1437  docker ps
+ 1438  docker ps -a
+ 1439  docker rm -f 7244916be851 f06203487535
+ 1440  node
+ 1441  sudo apt-get install curl python-software-properties software-properties-common 
+ 1442  curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+ 1443  sudo apt-get install curl python-software-properties software-properties-common
+ 1444  curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+ 1445  sudo apt-get install nodejs
+ 1446  node -v
+ 1447  curl –sL https://deb.nodesource.com/setup_12.x | sudo -E bash –
+ 1448  sudo apt install nodejs
+ 1449  node --version
+ 1450  npm --version
+ 1451  ls
+ 1452  cd src
+ 1453  ls
+ 1454  npm install
+ 1455  node server.js
+ 1456  docker image build -t conversao-temperatura .
+ 1457  docker image build -t conversao-temperatura2 .
+ 1458  pwd
+ 1459  docker image build -t conversao .
+ 1460  docker image build -t conversao 
+ 1461  docker image build -t conversao .
+ 1462  cd ..
+ 1463  ls
+ 1464  cd src/
+ 1465  ls
+ 1466  docker image build -t conversao-temperatura .
+ 1467  docker ps
+ 1468  docker ps -a
+ 1469  git pull
+ 1470  docker image ls
+ 1471  docker run -d -p 8080:8080 conversao-temperatura
+ 1472  docker ps
+ 1473  docker container rm -f 8894f0fb476b
+ 1474  history
+
+┌─[orbite]@[orbite-desktop]:~/kube-dev/conversao-temperatura/src
+└──> $ docker image ls
+REPOSITORY                       TAG       IMAGE ID       CREATED             SIZE
+orbite82/conversao-temperatura   v1        4aa93d33826f   13 seconds ago      995MB
+conversao-temperatura            latest    a7b7d5c2f1cf   About an hour ago   1.05GB
+<none>                           <none>    520caca1ad60   2 hours ago         993MB
+node                             latest    14777a723ec4   6 days ago          993MB
+hello-world                      latest    feb5d9fea6a5   3 months ago        13.3kB
+node                             14.17.5   256d6360f157   5 months ago        944MB
+
+ 1400  docker logout
+ 1401  docker login
+ 1402  docker image build -t orbite82/conversao-temperatura:v1 .
+ 1403  ls
+ 1404  cd src
+ 1405  ls
+ 1406  docker image build -t orbite82/conversao-temperatura:v1 .
+ 1407  docker image ls
+ 1408  docker image build -t orbite82/conversao-temperatura:v1 .
+ 1409  docker image lls
+ 1410  docker image ls
+ 1411  docker image build -t orbite82/conversao-temperatura:v1 .
+ 1412  git add .
+ 1413  git commit -m "nova imagem com versionamento correto"
+ 1414  git push origin main
